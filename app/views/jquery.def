@@ -1,0 +1,48 @@
+
+{{##def.content:
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>FullCalendar with jQuery UI Modal</h1>
+      <p>From the article <a href="http://www.mikesmithdev.com/blog/jquery-full-calendar-with-ui-modal-dialog/" target="_blank">jQuery FullCalendar - Event Description with Modal Pop-up</a></p>
+      <br><br>
+      
+      <div id="calendar"></div>
+    </div>
+  </div>
+
+
+<div id="eventContent" title="Event Details" style="display:none;">
+    Start: <span id="startTime"></span><br>
+    End: <span id="endTime"></span><br><br>
+    <p id="eventInfo"></p>
+    <p><strong><a id="eventLink" href="" target="_blank">Read More</a></strong></p>
+</div>
+
+#}}
+
+{{##def.scripts :
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function() {
+        $('#calendar').fullCalendar({
+            events: '/calendarJSON/',
+            header: {
+                left: '',
+                center: 'prev title next',
+                right: ''
+            },
+            eventClick:  function(event, jsEvent, view) {
+                $("#startTime").html(moment(event.start).format('MMM Do h:mm A'));
+                $("#endTime").html(moment(event.end).format('MMM Do h:mm A'));
+                $("#eventInfo").html(event.description);
+                $("#eventLink").attr('href', event.url);
+                $("#eventContent").dialog({ modal: true, title: event.title, width:380});
+                return false;
+            }
+        });
+    });
+  </script>
+#}}
+
+{{#def.include('layout')}}

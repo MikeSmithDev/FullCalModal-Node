@@ -1,0 +1,28 @@
+{{##def.aboveContent :
+
+#}}
+
+{{##def.content:
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>FullCalendar Demos</h1><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <p><a class="btn btn-primary btn-lg" href="/bootstrap/" role="button">Bootstrap Modal</a></p></div>
+    <div class="col-xs-12 col-sm-4">
+      <p><a class="btn btn-primary btn-lg" href="/jquery/" role="button">jQuery UI Modal</a></p></div>
+    <div class="col-xs-12 col-sm-4">
+      <p><a class="btn btn-primary btn-lg" href="/gcal/" role="button">gCal.js w/ Bootstrap Modal</a></p>
+    </div>       
+  </div>
+  #}}
+
+
+{{##def.scripts :
+
+#}}
+
+
+{{#def.include('layout')}}

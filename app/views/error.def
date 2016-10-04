@@ -1,0 +1,14 @@
+{{##def.content:
+  <div class="row">
+    <section class="contentError">
+    <div class="col-xs-2"> </div>
+    <div class="col-xs-8">
+      <h1>Well,</h1>
+      <h3>that doesn't look right.</h3>
+     </div>
+    </section>
+  </div>
+#}}
+
+
+{{#def.include('layout')}}
