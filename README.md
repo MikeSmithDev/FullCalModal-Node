@@ -1,6 +1,6 @@
 # FullCalModal-Node
 
-Three examples of how to use FullCalendar with Modals. Full working node.js project.
+Three examples of how to use FullCalendar with Modals. Full working node.js project. For more information on the template engine and the site structure, see [https://github.com/MikeSmithDev/dot-bootstrap](https://github.com/MikeSmithDev/dot-bootstrap).
 
 ## Usage
 
