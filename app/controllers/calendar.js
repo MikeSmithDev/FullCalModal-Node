@@ -51,6 +51,7 @@ exports.calendarJSON = function(req, res){
         });
     }
 
+    /* More random events! */
     for (x=1;x<6;x++){
         var i = x % 4 === 0 ? x-7 : x;
         var r = moment(new Date()).add(i, 'd');

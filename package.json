@@ -1,7 +1,7 @@
 {
-  "name": "doT-bootstrap",
+  "name": "FullCalModal-Node",
   "version": "1.0.0",
-  "description": "A site template based on DoT and Bootstrap",
+  "description": "FullCalendar Event Modals example from MikeSmithDev.com",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MikeSmithDev/dot-bootstrap"
+    "url": "https://github.com/MikeSmithDev/FullCalModal-Node"
   },
   "dependencies": {
     "express": "4.14.0",
@@ -21,7 +21,7 @@
     "dot-emc": "0.1.2",
     "moment": "2.15.1"
   },
-  "bugs": { "url" : "https://github.com/MikeSmithDev/dot-bootstrap/issues"
+  "bugs": { "url" : "https://github.com/MikeSmithDev/FullCalModal-Node/issues"
     , "email" : "mike@mikesmithdev.com"
   },
   "author": "MikeSmithDev",
